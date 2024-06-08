@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>mssqlserver2022</Name>
+  <Repository>mcr.microsoft.com/mssql/server:2022-latest</Repository>
+  <Registry>https://mcr.microsoft.com/product/mssql/server/about</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-release-notes-2022?view=sql-server-ver16</Project>
+  <Overview>**INSTALLATION STEPS**&#xD;
+- Run command:&#xD;
+&amp;gt;install -d -p -o 10001 -g 0 -m 755 /mnt/user/appdata/mssqlserver2022/{data,logs,dumps,backups,secrets}&#xD;
+&#xD;
+For a complete set of Environment Variables go to:&#xD;
+&amp;gt;https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-configure-environment-variables?view=sql-server-ver16</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/mssqlserver2022/mssqlserver2022.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="PORT" Target="1433" Default="1433" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1433</Config>
+  <Config Name="ACCEPT_EULA" Target="ACCEPT_EULA" Default="Y|N" Mode="" Description="Confirm your acceptance of the End-User Licensing Agreement" Type="Variable" Display="always" Required="true" Mask="false">Y</Config>
+  <Config Name="MSSQL_SA_PASSWORD" Target="MSSQL_SA_PASSWORD" Default="" Mode="" Description="Configure the 'sa' (admin) password" Type="Variable" Display="always" Required="true" Mask="true">$u8$$75#48^58@#8*3J%</Config>
+  <Config Name="MSSQL_PID (LICENSING)" Target="MSSQL_PID" Default="Express|Developer|Web|Standard|Enterprise" Mode="" Description="Select the SQL Server edition - https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver16" Type="Variable" Display="always" Required="true" Mask="false">Express</Config>
+  <Config Name="MSSQL_DATA_DIR" Target="MSSQL_DATA_DIR" Default="/var/opt/mssql/data" Mode="" Description="Directory where the new SQL Server database data files (.mdf) are created" Type="Variable" Display="always" Required="true" Mask="false">/var/opt/mssql/data</Config>
+  <Config Name="MSSQL_DATA_DIR PATH" Target="/var/opt/mssql/data" Default="/mnt/user/appdata/mssqlserver2022/data/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mssqlserver2022/data/</Config>
+  <Config Name="MSSQL_LOG_DIR" Target="MSSQL_LOG_DIR" Default="/var/opt/mssql/log" Mode="" Description="Directory where the new SQL Server database log (.ldf) files are created" Type="Variable" Display="always" Required="true" Mask="false">/var/opt/mssql/log</Config>
+  <Config Name="MSSQL_LOG_DIR PATH" Target="/var/opt/mssql/log" Default="/mnt/user/appdata/mssqlserver2022/logs" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mssqlserver2022/logs</Config>
+  <Config Name="MSSQL_DUMP_DIR" Target="MSSQL_DUMP_DIR" Default="/var/opt/mssql/dump" Mode="" Description="Directory where SQL Server will deposit the memory dumps and other troubleshooting files by default" Type="Variable" Display="always" Required="true" Mask="false">/var/opt/mssql/dump</Config>
+  <Config Name="MSSQL_DUMP_DIR PATH" Target="/var/opt/mssql/dump" Default="/mnt/user/appdata/mssqlserver2022/dumps/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mssqlserver2022/dumps/</Config>
+  <Config Name="MSSQL_BACKUP_DIR" Target="MSSQL_BACKUP_DIR" Default="/var/opt/mssql/backup" Mode="" Description="Set the Default backup directory location" Type="Variable" Display="always" Required="true" Mask="false">/var/opt/mssql/backup</Config>
+  <Config Name="MSSQL_BACKUP_DIR PATH" Target="/var/opt/mssql/backup" Default="/mnt/user/appdata/mssqlserver2022/backups/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mssqlserver2022/backups/</Config>
+  <Config Name="MSSQL_SECRETS_DIR PATH" Target="/var/opt/mssql/secrets" Default="/mnt/user/appdata/mssqlserver2022/secrets/" Mode="rw" Description="Default certificate directory location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mssqlserver2022/secrets/</Config>
+  <Config Name="MSSQL_AGENT_ENABLED" Target="MSSQL_AGENT_ENABLED" Default="true|false" Mode="" Description="Enable SQL Server Agent" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
+</Container>

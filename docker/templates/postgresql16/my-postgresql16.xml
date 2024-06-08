@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>postgresql16</Name>
+  <Repository>postgres:16</Repository>
+  <Registry>https://registry.hub.docker.com/_/postgres/</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://www.postgresql.org/docs/16/index.html</Project>
+  <Overview/>
+  <Category></Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/juusujanar/unraid-templates/master/PostgreSQL15.xml</TemplateURL>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/postgresql16/postgresql16.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="PORT" Target="5432" Default="5432" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="null">5432</Config>
+  <Config Name="CONFIG. PATH" Target="/var/lib/postgresql/data/postgresql.conf" Default="/mnt/user/appdata/postgresql16/data/postgresql.conf" Mode="rw" Description="Configuration options - https://pgtune.leopard.in.ua" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/postgresql16/data/postgresql.conf</Config>
+  <Config Name="DATA PATH" Target="/var/lib/postgresql/data" Default="/mnt/user/appdata/postgresql16/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="null">/mnt/user/appdata/postgresql16/data</Config>
+  <Config Name="POSTGRES_PASSWORD" Target="POSTGRES_PASSWORD" Default="" Mode="" Description="Configure the 'postgres' (admin) password" Type="Variable" Display="always" Required="true" Mask="true">I%k4f6!D5G8l2qWc1*#6M@L7*Ja&amp;086ptEEdhk6eTn86V2O50aF#Gx4P3g3$*&amp;f8</Config>
+</Container>

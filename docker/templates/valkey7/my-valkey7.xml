@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>valkey7</Name>
+  <Repository>valkey/valkey:7</Repository>
+  <Registry>https://hub.docker.com/r/valkey/valkey/</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/valkey-io/valkey</Project>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/valkey7/valkey7.png</Icon>
+  <ExtraParams/>
+  <PostArgs>valkey-server /usr/local/etc/valkey/valkey.conf</PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="PORT" Target="6379" Default="6379" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">6379</Config>
+  <Config Name="CONFIG. PATH" Target="/usr/local/etc/valkey/valkey.conf" Default="/mnt/user/appdata/valkey7/valkey.conf" Mode="rw" Description="Configuration options - https://github.com/valkey-io/valkey/blob/7.2/valkey.conf" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/valkey7/valkey.conf</Config>
+  <Config Name="DATA PATH" Target="/data" Default="/mnt/user/appdata/valkey7/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/valkey7/data</Config>
+</Container>
