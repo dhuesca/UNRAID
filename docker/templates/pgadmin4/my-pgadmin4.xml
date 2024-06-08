@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>pgadmin4</Name>
+  <Repository>dpage/pgadmin4</Repository>
+  <Registry>https://hub.docker.com/r/dpage/pgadmin4/</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html</Project>
+  <Overview>**INSTALLATION STEPS**&#xD;
+- Run command:&#xD;
+&amp;gt;install -d -p -o 5050 -g 5050 -m 755 /mnt/user/appdata/pgadmin4&#xD;
+&#xD;
+For a complete set of Environment Variables go to:&#xD;
+&amp;gt;https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html</Overview>
+  <Category></Category>
+  <WebUI>http://[IP]:[PORT:8792]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/FoxxMD/unraid-docker-templates/master/foxxmd/pgadmin4.xml</TemplateURL>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/pgadmin4/pgadmin4.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="80" Default="8792" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8792</Config>
+  <Config Name="CONFIG. PATH" Target="/var/lib/pgadmin" Default="/mnt/user/appdata/pgadmin4" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pgadmin4</Config>
+  <Config Name="PGADMIN_DEFAULT_EMAIL" Target="PGADMIN_DEFAULT_EMAIL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">contacto@dhuesca.com</Config>
+  <Config Name="PGADMIN_DEFAULT_PASSWORD" Target="PGADMIN_DEFAULT_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">^sOo!A#$kr2w^#yEB6r!6lT%vEW1G&amp;$f@9%hNU%wYWDDO1&amp;!Mc5mm&amp;2^I57F&amp;I2L</Config>
+</Container>

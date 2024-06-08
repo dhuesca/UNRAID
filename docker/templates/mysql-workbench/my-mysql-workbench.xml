@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>mysql-workbench</Name>
+  <Repository>lscr.io/linuxserver/mysql-workbench</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/mysql-workbench</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://www.mysql.com/products/workbench/</Project>
+  <Overview/>
+  <Category></Category>
+  <WebUI>http://[IP]:[PORT:3001]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/mysql-workbench.xml</TemplateURL>
+  <Icon>/mnt/user/appdata/mysql-workbench/data/postgresql.conf https://github.com/dhuesca/UNRAID/raw/main/docker/templates/mysql-workbench/mysql-workbench.png</Icon>
+  <ExtraParams>--cap-add=IPC_LOCK</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="3000" Default="3001" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3001</Config>
+  <Config Name="CONFIG. PATH" Target="/config" Default="/mnt/user/appdata/mysql-workbench/config" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mysql-workbench/config</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">022</Config>
+</Container>
