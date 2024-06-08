@@ -28,7 +28,7 @@ For a complete set of Environment Variables go to:&#xD;
   <Requires/>
   <Config Name="PORT" Target="1433" Default="1433" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1433</Config>
   <Config Name="ACCEPT_EULA" Target="ACCEPT_EULA" Default="Y|N" Mode="" Description="Confirm your acceptance of the End-User Licensing Agreement" Type="Variable" Display="always" Required="true" Mask="false">Y</Config>
-  <Config Name="MSSQL_SA_PASSWORD" Target="MSSQL_SA_PASSWORD" Default="" Mode="" Description="Configure the 'sa' (admin) password" Type="Variable" Display="always" Required="true" Mask="true">$u8$$75#48^58@#8*3J%</Config>
+  <Config Name="MSSQL_SA_PASSWORD" Target="MSSQL_SA_PASSWORD" Default="" Mode="" Description="Configure the 'sa' (admin) password" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="MSSQL_PID (LICENSING)" Target="MSSQL_PID" Default="Express|Developer|Web|Standard|Enterprise" Mode="" Description="Select the SQL Server edition - https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver16" Type="Variable" Display="always" Required="true" Mask="false">Express</Config>
   <Config Name="MSSQL_DATA_DIR" Target="MSSQL_DATA_DIR" Default="/var/opt/mssql/data" Mode="" Description="Directory where the new SQL Server database data files (.mdf) are created" Type="Variable" Display="always" Required="true" Mask="false">/var/opt/mssql/data</Config>
   <Config Name="MSSQL_DATA_DIR PATH" Target="/var/opt/mssql/data" Default="/mnt/user/appdata/mssqlserver2022/data/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mssqlserver2022/data/</Config>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>mongodb5</Name>
+  <Repository>mongo:5</Repository>
+  <Registry>https://hub.docker.com/_/mongo/</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://www.mongodb.com/</Project>
+  <Overview/>
+  <Category></Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/jason-bean/docker-templates/master/jasonbean-repo/MongoDB.xml</TemplateURL>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/mongodb5/mongodb5.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1717862029</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="PORT" Target="27017" Default="27017" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">27017</Config>
+  <Config Name="DATA PATH" Target="/data/db" Default="/mnt/user/appdata/mongodb5/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mongodb5/data</Config>
+  <Config Name="MONGO_INITDB_ROOT_USERNAME" Target="MONGO_INITDB_ROOT_USERNAME" Default="root" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">root</Config>
+  <Config Name="MONGO_INITDB_ROOT_PASSWORD" Target="MONGO_INITDB_ROOT_PASSWORD" Default="" Mode="" Description="Configure the 'root' (admin) password" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+</Container>

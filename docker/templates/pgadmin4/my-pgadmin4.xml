@@ -29,5 +29,5 @@ For a complete set of Environment Variables go to:&#xD;
   <Config Name="WEB UI" Target="80" Default="8792" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8792</Config>
   <Config Name="CONFIG. PATH" Target="/var/lib/pgadmin" Default="/mnt/user/appdata/pgadmin4" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pgadmin4</Config>
   <Config Name="PGADMIN_DEFAULT_EMAIL" Target="PGADMIN_DEFAULT_EMAIL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">contacto@dhuesca.com</Config>
-  <Config Name="PGADMIN_DEFAULT_PASSWORD" Target="PGADMIN_DEFAULT_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">^sOo!A#$kr2w^#yEB6r!6lT%vEW1G&amp;$f@9%hNU%wYWDDO1&amp;!Mc5mm&amp;2^I57F&amp;I2L</Config>
+  <Config Name="PGADMIN_DEFAULT_PASSWORD" Target="PGADMIN_DEFAULT_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
 </Container>

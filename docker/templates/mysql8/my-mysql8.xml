@@ -26,5 +26,5 @@
   <Config Name="CONFIG. PATH" Target="/etc/my.cnf" Default="/mnt/user/appdata/mysql8/my.cnf" Mode="rw" Description="Configuration options - https://dev.mysql.com/doc/refman/8.0/en/option-files.html" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mysql8/my.cnf</Config>
   <Config Name="DATA PATH" Target="/var/lib/mysql" Default="/mnt/user/appdata/mysql8/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mysql8/data</Config>
   <Config Name="LOGS PATH" Target="/var/log/mysql" Default="/mnt/user/appdata/mysql8/logs" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mysql8/logs</Config>
-  <Config Name="MYSQL_ROOT_PASSWORD" Target="MYSQL_ROOT_PASSWORD" Default="" Mode="" Description="Configure the 'root' (admin) password" Type="Variable" Display="always" Required="true" Mask="true">Revolving-Drizzly-Rants4</Config>
+  <Config Name="MYSQL_ROOT_PASSWORD" Target="MYSQL_ROOT_PASSWORD" Default="" Mode="" Description="Configure the 'root' (admin) password" Type="Variable" Display="always" Required="true" Mask="true"></Config>
 </Container>
