@@ -13,7 +13,7 @@
 &amp;gt;https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html</Overview>
   <Category/>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/master/templates/MySQL.xml</TemplateURL>
+  <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/mysql8/mysql8.png</Icon>
   <ExtraParams>--user=99:100</ExtraParams>
   <PostArgs>mysqld --log-error=/var/log/mysql/error.log</PostArgs>

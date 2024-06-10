@@ -12,7 +12,7 @@
   <Overview/>
   <Category></Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/jason-bean/docker-templates/master/jasonbean-repo/MongoDB.xml</TemplateURL>
+  <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/mongodb7/mongodb7.png</Icon>
   <ExtraParams/>
   <PostArgs/>

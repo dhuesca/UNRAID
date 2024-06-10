@@ -12,7 +12,7 @@
   <Overview/>
   <Category></Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/juusujanar/unraid-templates/master/PostgreSQL15.xml</TemplateURL>
+  <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/postgresql16/postgresql16.png</Icon>
   <ExtraParams/>
   <PostArgs/>
