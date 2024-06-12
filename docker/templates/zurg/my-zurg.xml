@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>zurg</Name>
+  <Repository>ghcr.io/debridmediamanager/zurg-testing</Repository>
+  <Registry>https://github.com/orgs/debridmediamanager/packages/container/package/zurg-testing</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/debridmediamanager/zurg-testing/wiki/History</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:59999]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/zurg/zurg.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="59999" Default="59999" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">59999</Config>
+  <Config Name="CONFIG. PATH" Target="/app/config.yml" Default="/mnt/user/appdata/zurg/config.yml" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/zurg/config.yml</Config>
+  <Config Name="SYMLINKS" Target="/app/data" Default="/mnt/user/appdata/zurg/data/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/zurg/data/</Config>
+</Container>
