@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>rclone</Name>
+  <Repository>rclone/rclone</Repository>
+  <Registry>https://rclone.org/docs/#options</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/rclone/rclone</Project>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/rclone/rclone.png</Icon>
+  <ExtraParams>-ti --restart unless-stopped --cap-add SYS_ADMIN --security-opt apparmor:unconfined -v /mnt/user/debrid:/debrid:rshared</ExtraParams>
+  <PostArgs>mount zurg-webdav: /debrid  --log-file /logs/rclone.log  --cache-dir=/cache/  --vfs-cache-mode full  --vfs-fast-fingerprint  --vfs-cache-max-size 64G  --vfs-cache-max-age 24h  --vfs-read-chunk-size 64M  --vfs-read-chunk-size-limit 512M  --vfs-read-ahead 256M  --vfs-cache-poll-interval 1m  --dir-cache-time 10s  --allow-non-empty  --allow-other  --buffer-size=64M  --transfers 8  --no-modtime  --uid=99  --gid=100  --umask=002</PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="CONFIG. PATH" Target="/config/rclone/rclone.conf" Default="/mnt/user/appdata/rclone/rclone.conf" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/rclone/rclone.conf</Config>
+  <Config Name="DEVICE" Target="" Default="" Mode="" Description="" Type="Device" Display="always" Required="true" Mask="false">/dev/fuse:rwm</Config>
+  <Config Name="LOGS" Target="/logs" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/rclone/logs/</Config>
+  <Config Name="CACHE" Target="/cache" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/rclone/cache/</Config>
+</Container>
