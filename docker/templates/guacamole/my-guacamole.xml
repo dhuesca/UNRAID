@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>guacamole</Name>
+  <Repository>jasonbean/guacamole</Repository>
+  <Registry>https://registry.hub.docker.com/r/jasonbean/guacamole/</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://guacamole.apache.org/doc/gug/</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:19117]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/guacamole/guacamole.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1718204136</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="8080" Default="19117" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">19117</Config>
+  <Config Name="CONFIG. PATH" Target="/config" Default="/mnt/user/appdata/guacamole/config" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/guacamole/config</Config>
+  <Config Name="OPT_MYSQL" Target="OPT_MYSQL" Default="Y|N" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">Y</Config>
+  <Config Name="OPT_TOTP" Target="OPT_TOTP" Default="Y|N" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">Y</Config>
+  <Config Name="PUID" Target="PUID" Default="90" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+</Container>

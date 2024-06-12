@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>tor</Name>
+  <Repository>ich777/torbrowser</Repository>
+  <Registry>https://hub.docker.com/r/ich777/torbrowser/</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://blog.torproject.org/</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8983]/vnc.html?autoconnect=true</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/tor/tor.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1718203386</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="8080" Default="8983" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8983</Config>
+  <Config Name="NOVNC_RESIZE" Target="NOVNC_RESIZE" Default="remote|scale|off" Mode="or " Description="" Type="Variable" Display="always" Required="false" Mask="false">remote</Config>
+  <Config Name="CUSTOM_RES_W" Target="CUSTOM_RES_W" Default="" Mode="" Description="SCREEN WIDTH" Type="Variable" Display="always" Required="true" Mask="false">1440</Config>
+  <Config Name="CUSTOM_RES_H" Target="CUSTOM_RES_H" Default="" Mode="" Description="SCREEN HEIGHT" Type="Variable" Display="always" Required="true" Mask="false">900</Config>
+  <Config Name="UID" Target="UID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
+  <Config Name="GID" Target="GID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">000</Config>
+</Container>
