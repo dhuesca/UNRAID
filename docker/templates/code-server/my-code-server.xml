@@ -10,7 +10,7 @@
   <Support/>
   <Project>https://coder.com/docs/code-server</Project>
   <Overview/>
-  <Category></Category>
+  <Category/>
   <WebUI>http://[IP]:[PORT:8443]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/code-server/code-server.png</Icon>

@@ -10,7 +10,7 @@
   <Support/>
   <Project>https://www.postgresql.org/docs/16/index.html</Project>
   <Overview/>
-  <Category></Category>
+  <Category/>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/postgresql16/postgresql16.png</Icon>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>mongodb7</Name>
-  <Repository>mongo:5</Repository>
+  <Repository>mongo:7</Repository>
   <Registry>https://hub.docker.com/_/mongo/</Registry>
   <Network>nasty</Network>
   <MyIP/>
@@ -10,7 +10,7 @@
   <Support/>
   <Project>https://www.mongodb.com/docs/manual/</Project>
   <Overview/>
-  <Category></Category>
+  <Category/>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/mongodb7/mongodb7.png</Icon>

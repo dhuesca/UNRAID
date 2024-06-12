@@ -10,7 +10,7 @@
   <Support/>
   <Project>https://github.com/ollama/ollama/blob/main/docs/README.md</Project>
   <Overview/>
-  <Category></Category>
+  <Category/>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/ollama/ollama.png</Icon>
@@ -21,6 +21,6 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="PORT" Target="11434" Default="11434" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">11434</Config>
   <Config Name="CONFIG. PATH" Target="/root/.ollama" Default="/mnt/user/appdata/ollama" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ollama</Config>
+  <Config Name="PORT" Target="11434" Default="11434" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">11434</Config>
 </Container>
