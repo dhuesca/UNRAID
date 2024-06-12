@@ -1,6 +1,6 @@
 zurg: v1
 
-token: NVRODKOZ5VNN5UFJWNRU7OV5XFONXVE32WT4FJRPIGYLVH7O6QMA
+token: 
 port: 59999
 network_buffer_size: 1048576
 concurrent_workers: 200
