@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>rdt-client</Name>
+  <Repository>rogerfar/rdtclient:latest</Repository>
+  <Registry>https://hub.docker.com/r/rogerfar/rdtclient/</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/rogerfar/rdt-client</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:6500]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/rdt-client/rdt-client.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEBUI" Target="6500" Default="6500" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CONFIG. PATH" Target="/data/db/" Default="/mnt/user/appdata/rdt-client/config/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SYMLINKS PATH" Target="/data/downloads/debrid/" Default="/mnt/user/data/downloads/debrid/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="R-CLONE MOUNT" Target="/mnt/user/debrid/torrents/" Default="/mnt/user/debrid/torrents/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>

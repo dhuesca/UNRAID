@@ -11,7 +11,7 @@
   <Project>https://www.mysql.com/products/workbench/</Project>
   <Overview/>
   <Category/>
-  <WebUI>http://[IP]:[PORT:3001]/</WebUI>
+  <WebUI>http://[IP]:[PORT:3001]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/mysql-workbench/mysql-workbench.png</Icon>
   <ExtraParams>--cap-add=IPC_LOCK</ExtraParams>

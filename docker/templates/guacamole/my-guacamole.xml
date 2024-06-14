@@ -11,7 +11,7 @@
   <Project>https://guacamole.apache.org/doc/gug/</Project>
   <Overview/>
   <Category/>
-  <WebUI>http://[IP]:[PORT:19117]/</WebUI>
+  <WebUI>http://[IP]:[PORT:19117]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/guacamole/guacamole.png</Icon>
   <ExtraParams/>

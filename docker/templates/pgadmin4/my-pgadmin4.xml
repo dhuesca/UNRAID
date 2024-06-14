@@ -16,7 +16,7 @@
 For a complete set of Environment Variables go to:&#xD;
 &amp;gt;https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html</Overview>
   <Category/>
-  <WebUI>http://[IP]:[PORT:8792]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8792]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/pgadmin4/pgadmin4.png</Icon>
   <ExtraParams/>

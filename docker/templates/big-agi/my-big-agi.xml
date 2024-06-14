@@ -11,7 +11,7 @@
   <Project>https://github.com/enricoros/big-AGI/blob/main/docs/environment-variables.md</Project>
   <Overview/>
   <Category/>
-  <WebUI>http://[IP]:[PORT:12332]/</WebUI>
+  <WebUI>http://[IP]:[PORT:12332]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/big-agi/big-agi.png</Icon>
   <ExtraParams/>
