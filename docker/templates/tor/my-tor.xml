@@ -14,18 +14,19 @@
   <WebUI>http://[IP]:[PORT:8983]/vnc.html?autoconnect=true</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/tor/tor.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1718203386</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="WEB UI" Target="8080" Default="8983" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8983</Config>
-  <Config Name="NOVNC_RESIZE" Target="NOVNC_RESIZE" Default="remote|scale|off" Mode="or " Description="" Type="Variable" Display="always" Required="false" Mask="false">remote</Config>
-  <Config Name="CUSTOM_RES_W" Target="CUSTOM_RES_W" Default="" Mode="" Description="SCREEN WIDTH" Type="Variable" Display="always" Required="true" Mask="false">1440</Config>
-  <Config Name="CUSTOM_RES_H" Target="CUSTOM_RES_H" Default="" Mode="" Description="SCREEN HEIGHT" Type="Variable" Display="always" Required="true" Mask="false">900</Config>
-  <Config Name="UID" Target="UID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
-  <Config Name="GID" Target="GID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
-  <Config Name="UMASK" Target="UMASK" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">000</Config>
+  <Config Name="WEB UI" Target="8080" Default="8983" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="HOST ACCESS" Target="/torbrowser/Downloads/" Default="/mnt/user/data/transfer/docker/tor/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="NOVNC_RESIZE" Target="NOVNC_RESIZE" Default="remote|scale|off" Mode="or " Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="CUSTOM_RES_W" Target="CUSTOM_RES_W" Default="1440" Mode="" Description="SCREEN WIDTH" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CUSTOM_RES_H" Target="CUSTOM_RES_H" Default="900" Mode="" Description="SCREEN HEIGHT" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="UID" Target="UID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="GID" Target="GID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
 </Container>

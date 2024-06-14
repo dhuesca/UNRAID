@@ -11,7 +11,7 @@
   <Project>https://www.mysql.com/products/workbench/</Project>
   <Overview/>
   <Category/>
-  <WebUI/>
+  <WebUI>http://[IP]:[PORT:3001]/</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/mysql-workbench/mysql-workbench.png</Icon>
   <ExtraParams>--cap-add=IPC_LOCK</ExtraParams>
@@ -21,9 +21,10 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="WEB UI" Target="3000" Default="3001" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3001</Config>
-  <Config Name="CONFIG. PATH" Target="/config" Default="/mnt/user/appdata/mysql-workbench/config" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mysql-workbench/config</Config>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
-  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">022</Config>
+  <Config Name="WEB UI" Target="3000" Default="3001" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CONFIG. PATH" Target="/config/" Default="/mnt/user/appdata/mysql-workbench/config/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="HOST ACCESS" Target="/config/Downloads/" Default="/mnt/user/data/transfer/docker/mysql-workbench/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
 </Container>

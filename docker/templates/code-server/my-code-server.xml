@@ -21,12 +21,12 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="WEB UI" Target="8443" Default="8443" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8443</Config>
-  <Config Name="CONFIG" Target="/config" Default="/mnt/user/appdata/code-server" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/code-server</Config>
+  <Config Name="WEB UI" Target="8443" Default="8443" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CONFIG" Target="/config" Default="/mnt/user/appdata/code-server/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="HOST ACCESS" Target="/host" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/</Config>
   <Config Name="PASSWORD" Target="PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="SUDO_PASSWORD" Target="SUDO_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
-  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">022</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
 </Container>

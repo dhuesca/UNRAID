@@ -5,7 +5,7 @@
   <Registry>https://rclone.org/docs/#options</Registry>
   <Network>nasty</Network>
   <MyIP/>
-  <Shell>bash</Shell>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://github.com/rclone/rclone</Project>
@@ -21,8 +21,8 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="CONFIG. PATH" Target="/config/rclone/rclone.conf" Default="/mnt/user/appdata/rclone/rclone.conf" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/rclone/rclone.conf</Config>
-  <Config Name="DEVICE" Target="" Default="" Mode="" Description="" Type="Device" Display="always" Required="true" Mask="false">/dev/fuse:rwm</Config>
-  <Config Name="LOGS" Target="/logs" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/rclone/logs/</Config>
-  <Config Name="CACHE" Target="/cache" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/rclone/cache/</Config>
+  <Config Name="CONFIG. PATH" Target="/config/rclone/rclone.conf/" Default="/mnt/user/appdata/rclone/rclone.conf/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DEVICE" Target="" Default="/dev/fuse:rwm" Mode="" Description="" Type="Device" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="LOGS" Target="/logs/" Default="/mnt/user/appdata/rclone/logs/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="CACHE" Target="/cache/" Default="/mnt/user/appdata/rclone/cache/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
 </Container>

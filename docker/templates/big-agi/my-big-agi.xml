@@ -5,7 +5,7 @@
   <Registry>https://github.com/enricoros/big-AGI/pkgs/container/big-agi</Registry>
   <Network>nasty</Network>
   <MyIP/>
-  <Shell>bash</Shell>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://github.com/enricoros/big-AGI/blob/main/docs/environment-variables.md</Project>
@@ -21,21 +21,21 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="WEB UI" Target="3000" Default="12332" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">12332</Config>
+  <Config Name="WEB UI" Target="3000" Default="12332" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false"></Config>
   <Config Name="POSTGRES_PRISMA_URL" Target="POSTGRES_PRISMA_URL" Default="postgres://[USERNAME]:[PASSWORD]@[HOST]/[DATABASE]?pgbouncer=true&amp;amp;connect_timeout=15" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="OPENAI_API_KEY" Target="OPENAI_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="OPENAI_API_HOST" Target="OPENAI_API_HOST" Default="https://oai.hconeai.com" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="OPENAI_API_ORG_ID" Target="OPENAI_API_ORG_ID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="OPENAI_API_KEY" Target="OPENAI_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="ANTHROPIC_API_KEY" Target="ANTHROPIC_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
-  <Config Name="GROQ_API_KEY" Target="GROQ_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <Config Name="MISTRAL_API_KEY" Target="MISTRAL_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="GROQ_API_KEY" Target="GROQ_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="OLLAMA_API_HOST" Target="OLLAMA_API_HOST" Default="http://ollama:11434" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="HELICONE_API_KEY" Target="HELICONE_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="PERPLEXITY_API_KEY" Target="PERPLEXITY_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <Config Name="TOGETHERAI_API_KEY" Target="TOGETHERAI_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <Config Name="ELEVENLABS_API_KEY" Target="ELEVENLABS_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <Config Name="PRODIA_API_KEY" Target="PRODIA_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <Config Name="GOOGLE_CLOUD_API_KEY" Target="GOOGLE_CLOUD_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
-  <Config Name="PUPPETEER_WSS_ENDPOINT" Target="PUPPETEER_WSS_ENDPOINT" Default="ws://browserless:3000" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="OPENAI_API_HOST" Target="OPENAI_API_HOST" Default="https://oai.hconeai.com" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="HELICONE_API_KEY" Target="HELICONE_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
-  <Config Name="OLLAMA_API_HOST" Target="OLLAMA_API_HOST" Default="http://ollama:11434" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="GOOGLE_CSE_ID" Target="GOOGLE_CSE_ID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="PUPPETEER_WSS_ENDPOINT" Target="PUPPETEER_WSS_ENDPOINT" Default="ws://browserless:3000" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
 </Container>

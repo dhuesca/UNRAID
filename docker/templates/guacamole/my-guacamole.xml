@@ -21,10 +21,10 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="WEB UI" Target="8080" Default="19117" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">19117</Config>
-  <Config Name="CONFIG. PATH" Target="/config" Default="/mnt/user/appdata/guacamole/config" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/guacamole/config</Config>
-  <Config Name="OPT_MYSQL" Target="OPT_MYSQL" Default="Y|N" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">Y</Config>
-  <Config Name="OPT_TOTP" Target="OPT_TOTP" Default="Y|N" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">Y</Config>
-  <Config Name="PUID" Target="PUID" Default="90" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="WEB UI" Target="8080" Default="19117" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CONFIG. PATH" Target="/config" Default="/mnt/user/appdata/guacamole/config/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="OPT_MYSQL" Target="OPT_MYSQL" Default="Y|N" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="OPT_TOTP" Target="OPT_TOTP" Default="Y|N" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
 </Container>

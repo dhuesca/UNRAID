@@ -21,7 +21,7 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="PORT" Target="6379" Default="6379" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">6379</Config>
-  <Config Name="CONFIG. PATH" Target="/usr/local/etc/valkey/valkey.conf" Default="/mnt/user/appdata/valkey7/valkey.conf" Mode="rw" Description="Configuration options - https://github.com/valkey-io/valkey/blob/7.2/valkey.conf" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/valkey7/valkey.conf</Config>
-  <Config Name="DATA PATH" Target="/data" Default="/mnt/user/appdata/valkey7/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/valkey7/data</Config>
+  <Config Name="PORT" Target="6379" Default="6379" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CONFIG. PATH" Target="/usr/local/etc/valkey/valkey.conf/" Default="/mnt/user/appdata/valkey7/valkey.conf/" Mode="rw" Description="Configuration options - https://github.com/valkey-io/valkey/blob/7.2/valkey.conf" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DATA PATH" Target="/data" Default="/mnt/user/appdata/valkey7/data/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
 </Container>
