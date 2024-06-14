@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>npm</Name>
+  <Repository>jlesage/nginx-proxy-manager</Repository>
+  <Registry>https://hub.docker.com/r/jlesage/nginx-proxy-manager/</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://nginxproxymanager.com/guide</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8181]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/npm/npm.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="8181" Default="8181" Mode="tcp" Description="" Type="Port" Display="always" Required="null" Mask="null"></Config>
+  <Config Name="HTTP PORT" Target="8080" Default="180" Mode="tcp" Description="" Type="Port" Display="always" Required="null" Mask="null"></Config>
+  <Config Name="HTTPS PORT" Target="4443" Default="1443" Mode="tcp" Description="" Type="Port" Display="always" Required="null" Mask="null"></Config>
+  <Config Name="CONFIG. PATH" Target="/config/" Default="/mnt/user/appdata/npm/" Mode="rw" Description="" Type="Path" Display="always" Required="null" Mask="null"></Config>
+  <Config Name="PUID" Target="USER_ID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="null" Mask="null"></Config>
+  <Config Name="PGID" Target="GROUP_ID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="null" Mask="null"></Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="null" Mask="null"></Config>
+</Container>
