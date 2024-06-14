@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>prowlarr</Name>
+  <Repository>lscr.io/linuxserver/prowlarr</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/prowlarr</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://wiki.servarr.com/en/prowlarr</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:9696]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/prowlarr/prowlarr.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEBUI" Target="9696" Default="9696" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CONFIG" Target="/config/" Default="/mnt/user/appdata/prowlarr/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+</Container>

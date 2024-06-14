@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>sonarr</Name>
+  <Repository>ghcr.io/hotio/sonarr</Repository>
+  <Registry>https://github.com/hotio/sonarr/pkgs/container/sonarr</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://wiki.servarr.com/sonarr</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8989]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/sonarr/sonarr.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="8989" Default="8989" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CONFIG. PATH" Target="/config/" Default="/mnt/user/appdata/sonarr/config/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="HOST ACCESS" Target="/data/" Default="/mnt/user/data/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="R-CLONE MOUNT" Target="/mnt/user/debrid/torrents/" Default="/mnt/user/debrid/torrents/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>
