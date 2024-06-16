@@ -17,13 +17,13 @@
   <ExtraParams>--pid=host</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1718531376</DateInstalled>
+  <DateInstalled></DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="WEB UI" Target="61208" Default="61208" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">61208</Config>
-  <Config Name="DOCKER SOCK" Target="/var/run/docker.sock/" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock/</Config>
-  <Config Name="GLANCES_OPT" Target="GLANCES_OPT" Default="-w" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">-w</Config>
-  <Config Name="HOST ACCESS" Target="/rootfs" Default="/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false">/</Config>
-  <Config Name="CONFIG. PATH" Target="/etc/glances/glances.conf/" Default="/mnt/user/appdata/glances/glances.conf/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/glances/glances.conf/</Config>
+  <Config Name="WEB UI" Target="61208" Default="61208" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DOCKER SOCK" Target="/var/run/docker.sock/" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="GLANCES_OPT" Target="GLANCES_OPT" Default="-w" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="HOST ACCESS" Target="/rootfs" Default="/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CONFIG. PATH" Target="/etc/glances/glances.conf/" Default="/mnt/user/appdata/glances/glances.conf/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
 </Container>
