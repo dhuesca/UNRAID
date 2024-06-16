@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>docuseal</Name>
+  <Repository>docuseal/docuseal</Repository>
+  <Registry>https://hub.docker.com/r/docuseal/docuseal</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://www.docuseal.co/docs</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3010]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/docuseal/docuseal.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="3000" Default="3010" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="CONFIG. PATH" Target="/data/" Default="/mnt/user/appdata/docuseal/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="postgresql://[USERNAME]:[PASSWORD]@[HOST]:[PORT]/[DATABASE]?sslmode=disable" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+</Container>

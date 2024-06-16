@@ -1,0 +1,53 @@
+{
+    "url": "https://ghost.dhuesca.com",
+    "privacy": {
+        "useUpdateCheck": false,
+        "useGravatar": false,
+        "useRpcPing": false,
+        "useStructuredData": false
+    },
+    "database": {
+        "client": "mysql",
+        "connection": {
+            "host": "mysql8",
+            "port": 3306,
+            "user": "ghost",
+            "password": "",
+            "database": "ghost"
+        }
+    },
+    "mail": {
+        "transport": "SMTP",
+        "from": "notifications@dhuesca.com",
+        "options": {
+            "host": "smtp.gmail.com",
+            "port": 587,
+            "auth": {
+                "user": "",
+                "pass": ""
+            }
+        }
+    },
+    "paths": {
+        "contentPath": "content/"
+    },
+    "adapters": {
+        "logging": {
+            "path": "content/logs/",
+            "useLocalTime": false,
+            "level": "debug",
+            "rotation": {
+                "enabled": true,
+                "count": 15,
+                "period": "7d"
+            },
+            "transports": [
+                "stdout",
+                "file"
+            ]
+        },
+        "tenor": {
+            "googleApiKey": ""
+        }
+    }
+}

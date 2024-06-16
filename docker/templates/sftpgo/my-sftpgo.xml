@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>sftpgo</Name>
+  <Repository>drakkan/sftpgo</Repository>
+  <Registry>https://hub.docker.com/r/drakkan/sftpgo</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://sftpgo.github.io/latest/</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:12229]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/sftpgo/sftpgo.png</Icon>
+  <ExtraParams>--user 99:100</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="8080" Default="12229" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SFTP PORT" Target="2022" Default="2022" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="WEBDAV PORT" Target="10080" Default="10080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="WEBDAV PORT BINDING" Target="SFTPGO_WEBDAVD__BINDINGS__0__PORT" Default="10080" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="CONFIG. PATH" Target="/var/lib/sftpgo/" Default="/mnt/user/appdata/sftpgo/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="HOST ACCESS" Target="/host/" Default="/mnt/user/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="LOCAL STORAGE" Target="/srv/sftpgo/data/" Default="/mnt/user/data/transfer/docker/sftpgo/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="ENABLE DEFENDER" Target="SFTPGO_COMMON__DEFENDER__ENABLED" Default="true|false" Mode="" Description="https://github.com/drakkan/sftpgo/blob/main/docs/defender.md" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="DEBUG" Target="SFTPGO_FTPD__BINDINGS__0__DEBUG" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>

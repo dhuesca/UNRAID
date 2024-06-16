@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ghost</Name>
+  <Repository>ghost:alpine</Repository>
+  <Registry>https://hub.docker.com/_/ghost/</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/TryGhost/Ghost</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:2368]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/ghost/ghost.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="2368" Default="2368" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DATA PATH" Target="/var/lib/ghost/content/" Default="/mnt/user/appdata/ghost/content/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CONFIG. PATH" Target="/var/lib/ghost/config.production.json/" Default="/mnt/user/appdata/ghost/config.production.json/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+</Container>
