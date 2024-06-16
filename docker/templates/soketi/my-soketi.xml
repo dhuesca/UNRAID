@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>soketi</Name>
+  <Repository>quay.io/soketi/soketi</Repository>
+  <Registry>https://github.com/soketi/soketi</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://docs.soketi.app</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:6001]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/soketi/soketi.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="6001" Default="6001" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SOKETI_DEBUG" Target="SOKETI_DEBUG" Default="1|0" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">1</Config>
+  <Config Name="SOKETI_DEFAULT_APP_ID" Target="SOKETI_DEFAULT_APP_ID" Default="" Mode="" Description="&amp;gt;openssl rand -hex 32" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="SOKETI_DEFAULT_APP_KEY" Target="SOKETI_DEFAULT_APP_KEY" Default="" Mode="" Description="&amp;gt;openssl rand -hex 32" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="SOKETI_DEFAULT_APP_SECRET" Target="SOKETI_DEFAULT_APP_SECRET" Default="" Mode="" Description="&amp;gt;openssl rand -hex 32" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="SOKETI_DB_POOLING_ENABLED" Target="SOKETI_DB_POOLING_ENABLED" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SOKETI_DB_REDIS_HOST" Target="SOKETI_DB_REDIS_HOST" Default="valkey7" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SOKETI_DB_REDIS_PORT" Target="SOKETI_DB_REDIS_PORT" Default="6379" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SOKETI_DB_REDIS_USERNAME" Target="SOKETI_DB_REDIS_USERNAME" Default="soketi" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SOKETI_DB_REDIS_PASSWORD" Target="SOKETI_DB_REDIS_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="SOKETI_DB_REDIS_KEY_PREFIX" Target="SOKETI_DB_REDIS_KEY_PREFIX" Default="skt_" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SOKETI_DB_POSTGRES_HOST" Target="SOKETI_DB_POSTGRES_HOST" Default="postgresql16" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SOKETI_DB_POSTGRES_PORT" Target="3306" Default="3306" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SOKETI_DB_POSTGRES_USERNAME" Target="SOKETI_DB_POSTGRES_USERNAME" Default="soketi" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SOKETI_DB_POSTGRES_PASSWORD" Target="SOKETI_DB_POSTGRES_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="SOKETI_DB_POSTGRES_DATABASE" Target="SOKETI_DB_POSTGRES_DATABASE" Default="soketi" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+</Container>
