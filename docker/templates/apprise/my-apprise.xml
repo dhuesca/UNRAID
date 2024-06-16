@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>apprise</Name>
+  <Repository>caronc/apprise:latest</Repository>
+  <Registry>https://hub.docker.com/r/caronc/apprise/</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/caronc/apprise/wiki</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/apprise/apprise.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="8000" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DATA PATH" Target="/config/" Default="/mnt/user/appdata/apprise/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APPRISE_WORKER_COUNT" Target="APPRISE_WORKER_COUNT" Default="16" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+</Container>
