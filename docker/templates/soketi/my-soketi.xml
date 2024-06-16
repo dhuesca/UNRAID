@@ -26,6 +26,7 @@
   <Config Name="SOKETI_DEFAULT_APP_ID" Target="SOKETI_DEFAULT_APP_ID" Default="" Mode="" Description="&amp;gt;openssl rand -hex 32" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="SOKETI_DEFAULT_APP_KEY" Target="SOKETI_DEFAULT_APP_KEY" Default="" Mode="" Description="&amp;gt;openssl rand -hex 32" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="SOKETI_DEFAULT_APP_SECRET" Target="SOKETI_DEFAULT_APP_SECRET" Default="" Mode="" Description="&amp;gt;openssl rand -hex 32" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="SOKETI_ADAPTER_DRIVER" Target="SOKETI_ADAPTER_DRIVER" Default="redis|nats|local|cluster" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="SOKETI_DB_POOLING_ENABLED" Target="SOKETI_DB_POOLING_ENABLED" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="SOKETI_DB_REDIS_HOST" Target="SOKETI_DB_REDIS_HOST" Default="valkey7" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="SOKETI_DB_REDIS_PORT" Target="SOKETI_DB_REDIS_PORT" Default="6379" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
