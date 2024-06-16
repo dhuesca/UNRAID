@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dockersocket</Name>
+  <Repository>ghcr.io/tecnativa/docker-socket-proxy:latest</Repository>
+  <Registry>https://hub.docker.com/r/tecnativa/docker-socket-proxy</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Project>https://github.com/Tecnativa/docker-socket-proxy</Project>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/dockersocket/dockersocket.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="DOCKER SOCK" Target="/var/run/docker.sock/" Default="/var/run/docker.sock/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="AUTH" Target="AUTH" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="BUILD" Target="BUILD" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="COMMIT" Target="COMMIT" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="CONFIGS" Target="CONFIGS" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="CONTAINERS" Target="CONTAINERS" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="DISTRIBUTION" Target="DISTRIBUTION" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="EVENTS" Target="EVENTS" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="EXEC" Target="EXEC" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="IMAGES" Target="IMAGES" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="INFO" Target="INFO" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="NETWORKS" Target="NETWORKS" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="NODES" Target="NODES" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PING" Target="PING" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PLUGINS" Target="PLUGINS" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="POST" Target="POST" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SECRETS" Target="SECRETS" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SERVICES" Target="SERVICES" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SESSION" Target="SESSION" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SWARM" Target="SWARM" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SYSTEM" Target="SYSTEM" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="TASKS" Target="TASKS" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="VERSION" Target="VERSION" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="VOLUMES" Target="VOLUMES" Default="0|1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="info|debug|notice|warning|err|crit|alert|emerg" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>

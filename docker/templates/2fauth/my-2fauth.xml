@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>2fauth</Name>
+  <Repository>2fauth/2fauth</Repository>
+  <Registry>https://hub.docker.com/r/2fauth/2fauth</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>**INSTALLATION STEPS**&#xD;
+- Run command:&#xD;
+&amp;gt;install -d -p -o 1000 -g 1000 -m 700 /mnt/user/appdata/2fauth/&#xD;
+&#xD;
+For a complete set of Environment Variables go to:&#xD;
+&amp;gt;https://docs.2fauth.app</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:12553]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/2fauth/2fauth.png</Icon>
+  <ExtraParams>-it</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="8000" Default="12553" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CONFIG" Target="/2fauth/" Default="/mnt/user/appdata/2fauth/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SITE_OWNER" Target="SITE_OWNER" Default="2fauth@dhuesca.com" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="APP_KEY" Target="APP_KEY" Default="" Mode="" Description="Random string" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="APP_URL" Target="APP_URL" Default="https://2fauth.dhuesca.com" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APP_DEBUG" Target="APP_DEBUG" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="notice|debug|info|warning|error|critical|alert|emergency" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="MAIL_DRIVER" Target="MAIL_DRIVER" Default="SMTP" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="MAIL_HOST" Target="MAIL_HOST" Default="smtp.gmail.com" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="MAIL_PORT" Target="MAIL_PORT" Default="587" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="MAIL_USERNAME" Target="MAIL_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="MAIL_PASSWORD" Target="MAIL_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="MAIL_ENCRYPTION" Target="MAIL_ENCRYPTION" Default="TLS" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="MAIL_FROM_NAME" Target="MAIL_FROM_NAME" Default="2FAuth" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="MAIL_FROM_ADDRESS" Target="MAIL_FROM_ADDRESS" Default="notifications@dhuesca.com" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="WEBAUTHN_USER_VERIFICATION" Target="WEBAUTHN_USER_VERIFICATION" Default="preferred|required|discouraged" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="AUTHENTICATION_GUARD" Target="AUTHENTICATION_GUARD" Default="web-guard|reverse-proxy-guard" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="APP NAME" Target="APP_NAME" Default="2fauth" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="IS_DEMO_APP" Target="IS_DEMO_APP" Default="false|true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="LOG_CHANNEL" Target="LOG_CHANNEL" Default="daily" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>
