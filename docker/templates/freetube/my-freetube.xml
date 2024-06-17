@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>freetube</Name>
+  <Repository>lscr.io/linuxserver/freetube</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/freetube</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://freetubeapp.io/</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5624]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/freetube/freetube.png</Icon>
+  <ExtraParams>--shm-size=8gb</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1718651135</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="3000" Default="5624" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5624</Config>
+  <Config Name="DATA PATH" Target="/config/" Default="/mnt/user/appdata/freetube/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/freetube/</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">022</Config>
+</Container>
