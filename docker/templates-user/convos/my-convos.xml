@@ -3,7 +3,7 @@
   <Name>convos</Name>
   <Repository>ghcr.io/convos-chat/convos:stable</Repository>
   <Registry>https://github.com/convos-chat/convos/pkgs/container/convos</Registry>
-  <Network>bridge</Network>
+  <Network>nasty</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>

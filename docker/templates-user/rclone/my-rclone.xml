@@ -15,7 +15,7 @@
   <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/rclone/rclone.png</Icon>
   <ExtraParams>-ti --restart unless-stopped --cap-add SYS_ADMIN --security-opt apparmor:unconfined -v /mnt/user/debrid:/debrid:rshared</ExtraParams>
-  <PostArgs>mount zurg-webdav: /debrid  --log-file /logs/rclone.log  --cache-dir=/cache/  --vfs-cache-mode full  --vfs-fast-fingerprint  --vfs-cache-max-size 64G  --vfs-cache-max-age 24h  --vfs-read-chunk-size 64M  --vfs-read-chunk-size-limit 512M  --vfs-read-ahead 256M  --vfs-cache-poll-interval 1m  --dir-cache-time 10s  --allow-non-empty  --allow-other  --buffer-size=64M  --transfers 8  --no-modtime  --uid=99  --gid=100  --umask=002</PostArgs>
+  <PostArgs>mount zurg-webdav: /debrid  --log-file /logs/rclone.log  --cache-dir=/cache/  --vfs-cache-mode full  --vfs-fast-fingerprint  --vfs-cache-max-size 4G  --vfs-cache-max-age 24h  --vfs-read-chunk-size 64M  --vfs-read-chunk-size-limit 512M  --vfs-read-ahead 256M  --vfs-cache-poll-interval 1m  --dir-cache-time 10s  --allow-non-empty  --allow-other  --buffer-size=64M  --transfers 8  --no-modtime  --uid=99  --gid=100  --umask=022</PostArgs>
   <CPUset/>
   <DateInstalled></DateInstalled>
   <DonateText/>
