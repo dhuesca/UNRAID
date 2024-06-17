@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>evershop</Name>
+  <Repository>evershop/evershop:latest</Repository>
+  <Registry>https://hub.docker.com/r/evershop/evershop</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://evershop.io/docs/development/getting-started</Project>
+  <Overview>To create admin user, console into the Docker container and run:&#xD;
+&amp;gt;npm run user:create -- --email "evershop@dhuesca.com" --password "XXXXX" --name "Admin"</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:41233]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/evershop/evershop.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="3000" Default="41233" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DB_HOST" Target="DB_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="DB_PORT" Target="DB_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="DB_USER" Target="DB_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="DB_NAME" Target="DB_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>

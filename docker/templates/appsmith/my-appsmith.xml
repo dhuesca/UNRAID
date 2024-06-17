@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>appsmith</Name>
+  <Repository>appsmith/appsmith-ce</Repository>
+  <Registry>https://hub.docker.com/r/appsmith/appsmith-ce</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://docs.appsmith.com/getting-started/setup/environment-variables</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8182]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/appsmith/appsmith.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="80" Default="8182" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DATA PATH" Target="/appsmith-stacks/" Default="/mnt/user/appdata/appsmith/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APPSMITH_ENCRYPTION_PASSWORD" Target="APPSMITH_ENCRYPTION_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="APPSMITH_ENCRYPTION_SALT" Target="APPSMITH_ENCRYPTION_SALT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="APPSMITH_SIGNUP_DISABLED" Target="APPSMITH_SIGNUP_DISABLED" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APPSMITH_CLIENT_LOG_LEVEL" Target="APPSMITH_CLIENT_LOG_LEVEL" Default="0|1" Mode="" Description="0 - DEBUG | 1 - ERROR" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APPSMITH_MONGODB_URI" Target="APPSMITH_MONGODB_URI" Default="" Mode="" Description="mongodb+srv://[USERNAME]:[PASSWORD]@[HOST]:[PORT]/[DATABASE]" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="APPSMITH_REDIS_URL" Target="APPSMITH_REDIS_URL" Default="redis://[USERNAME]:[PASSWORD]@[HOST]:[PORT]/[DATABASE]" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APPSMITH_EMAIL_ENABLED" Target="APPSMITH_EMAIL_ENABLED" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APPSMITH_EMAIL_SERVER_HOST" Target="APPSMITH_EMAIL_SERVER_HOST" Default="smtp.gmail.com" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APPSMITH_EMAIL_SERVER_PORT" Target="APPSMITH_EMAIL_SERVER_PORT" Default="587" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APPSMITH_EMAIL_SERVER_USERNAME" Target="APPSMITH_EMAIL_SERVER_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APPSMITH_EMAIL_SERVER_PASSWORD" Target="APPSMITH_EMAIL_SERVER_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="APPSMITH_EMAIL_FROM_ADDRESS" Target="APPSMITH_EMAIL_FROM_ADDRESS" Default="notifications@dhuesca.com" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APPSMITH_EMAIL_REPLY_TO_ADDRESS" Target="APPSMITH_EMAIL_REPLY_TO_ADDRESS" Default="appsmith@dhuesca.com" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APPSMITH_SMTP_AUTH_ENABLED" Target="APPSMITH_SMTP_AUTH_ENABLED" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APPSMITH_TLS_ENABLED" Target="APPSMITH_TLS_ENABLED" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APPSMITH_TELEMETRY_ENABLED" Target="APPSMITH_TELEMETRY_ENABLED" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+</Container>
