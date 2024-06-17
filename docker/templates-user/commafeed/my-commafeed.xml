@@ -21,10 +21,10 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="WEB UI" Target="8082" Default="8082" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8082</Config>
-  <Config Name="DATA PATH" Target="/commafeed/data/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/commafeed/</Config>
-  <Config Name="CF_DATABASE_DRIVERCLASS" Target="CF_DATABASE_DRIVERCLASS" Default="org.postgresql.Driver|com.mysql.cj.jdbc.Driver" Mode="" Description="Database driver" Type="Variable" Display="always" Required="false" Mask="false">org.postgresql.Driver</Config>
-  <Config Name="CF_DATABASE_URL" Target="CF_DATABASE_URL" Default="jdbc:postgresql://postgresql16:5432/commafeed" Mode="" Description="POSTGRES - jdbc:postgresql://[HOST]:[PORT]/[DATABASE]&#13;&#10;MySQL: jdbc:mysql://[HOST]/[DATABASE]?autoReconnect=true&amp;amp;failOverReadOnly=false&amp;amp;maxReconnects=20&amp;amp;rewriteBatchedStatements=true" Type="Variable" Display="always" Required="true" Mask="false">jdbc:postgresql://postgresql16:5432/commafeed</Config>
-  <Config Name="CF_DATABASE_USER" Target="CF_DATABASE_USER" Default="commafeed" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">commafeed</Config>
-  <Config Name="CF_DATABASE_PASSWORD" Target="CF_DATABASE_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">Expiring-Garage6-Magenta</Config>
+  <Config Name="WEB UI" Target="8082" Default="8082" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="DATA PATH" Target="/commafeed/data/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="CF_DATABASE_DRIVERCLASS" Target="CF_DATABASE_DRIVERCLASS" Default="org.postgresql.Driver|com.mysql.cj.jdbc.Driver" Mode="" Description="Database driver" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="CF_DATABASE_URL" Target="CF_DATABASE_URL" Default="jdbc:postgresql://postgresql16:5432/commafeed" Mode="" Description="POSTGRES - jdbc:postgresql://[HOST]:[PORT]/[DATABASE]&#13;&#10;MySQL: jdbc:mysql://[HOST]/[DATABASE]?autoReconnect=true&amp;amp;failOverReadOnly=false&amp;amp;maxReconnects=20&amp;amp;rewriteBatchedStatements=true" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CF_DATABASE_USER" Target="CF_DATABASE_USER" Default="commafeed" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="CF_DATABASE_PASSWORD" Target="CF_DATABASE_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
 </Container>
