@@ -28,7 +28,7 @@
   <Config Name="APPSMITH_SIGNUP_DISABLED" Target="APPSMITH_SIGNUP_DISABLED" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="APPSMITH_CLIENT_LOG_LEVEL" Target="APPSMITH_CLIENT_LOG_LEVEL" Default="0|1" Mode="" Description="0 - DEBUG | 1 - ERROR" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="APPSMITH_MONGODB_URI" Target="APPSMITH_MONGODB_URI" Default="" Mode="" Description="mongodb+srv://[USERNAME]:[PASSWORD]@[HOST]:[PORT]/[DATABASE]" Type="Variable" Display="always" Required="true" Mask="true"></Config>
-  <Config Name="APPSMITH_REDIS_URL" Target="APPSMITH_REDIS_URL" Default="redis://[USERNAME]:[PASSWORD]@[HOST]:[PORT]/[DATABASE]" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APPSMITH_REDIS_URL" Target="APPSMITH_REDIS_URL" Default="redis://[USERNAME]:[PASSWORD]@[HOST]:[PORT]" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="APPSMITH_EMAIL_ENABLED" Target="APPSMITH_EMAIL_ENABLED" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="APPSMITH_EMAIL_SERVER_HOST" Target="APPSMITH_EMAIL_SERVER_HOST" Default="smtp.gmail.com" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="APPSMITH_EMAIL_SERVER_PORT" Target="APPSMITH_EMAIL_SERVER_PORT" Default="587" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>immich</Name>
+  <Repository>ghcr.io/immich-app/immich-server:release</Repository>
+  <Registry>https://github.com/immich-app/immich/pkgs/container/immich-server</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://immich.app/docs/install/environment-variables</Project>
+  <Overview>- postgres db user must be superadmin for first run, then privileges can be revoked&#xD;
+- if db migrations get fucky run &amp;gt;SELECT pgvectors_upgrade();</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:2599]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/immich/immich.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="3001" Default="2599" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DATA PATH" Target="/usr/src/app/upload/" Default="/mnt/user/appdata/immich/data/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="IMMICH_LOG_LEVEL" Target="IMMICH_LOG_LEVEL" Default="debug|verbose|log|warn|error" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="LOCALTIME" Target="/etc/localtime" Default="/etc/localtime" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DB_URL" Target="DB_URL" Default="" Mode="" Description="postgres://[USERNAME]:[PASSWORD]@[HOST]:[PORT]/[DATABASE]" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="REDIS_HOSTNAME" Target="REDIS_HOSTNAME" Default="valkey7" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="6379" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="REDIS_USERNAME" Target="REDIS_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="REDIS_PASSWORD" Target="REDIS_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+</Container>
