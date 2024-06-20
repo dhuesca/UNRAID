@@ -11,7 +11,7 @@
   <Project>https://github.com/TryGhost/Ghost</Project>
   <Overview/>
   <Category/>
-  <WebUI>http://[IP]:[PORT:2368]/</WebUI>
+  <WebUI>http://[IP]:[PORT:2368]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/ghost/ghost.png</Icon>
   <ExtraParams/>
