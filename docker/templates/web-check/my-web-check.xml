@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>web-check</Name>
+  <Repository>lissy93/web-check</Repository>
+  <Registry>https://registry.hub.docker.com/r/lissy93/web-check</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/Lissy93/web-check</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3227]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/web-check/web-check.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="3000" Default="3227" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+</Container>
