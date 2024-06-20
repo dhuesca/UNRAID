@@ -22,7 +22,7 @@
   <DonateLink/>
   <Requires/>
   <Config Name="WEB UI" Target="3000" Default="12332" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="POSTGRES_PRISMA_URL" Target="POSTGRES_PRISMA_URL" Default="postgres://[USERNAME]:[PASSWORD]@[HOST]/[DATABASE]?pgbouncer=true&amp;amp;connect_timeout=15" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="POSTGRES_PRISMA_URL" Target="POSTGRES_PRISMA_URL" Default="postgres://[USERNAME]:[PASSWORD]@[HOST]:[PORT]/[DATABASE]?pgbouncer=true&amp;amp;connect_timeout=15" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="OPENAI_API_HOST" Target="OPENAI_API_HOST" Default="https://oai.hconeai.com" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="OPENAI_API_ORG_ID" Target="OPENAI_API_ORG_ID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="OPENAI_API_KEY" Target="OPENAI_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>

@@ -30,9 +30,9 @@
   <Config Name="SOKETI_DB_POOLING_ENABLED" Target="SOKETI_DB_POOLING_ENABLED" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="SOKETI_DB_REDIS_HOST" Target="SOKETI_DB_REDIS_HOST" Default="valkey7" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="SOKETI_DB_REDIS_PORT" Target="SOKETI_DB_REDIS_PORT" Default="6379" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="SOKETI_DB_REDIS_DB" Target="SOKETI_DB_REDIS_DB" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="SOKETI_DB_REDIS_USERNAME" Target="SOKETI_DB_REDIS_USERNAME" Default="soketi" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="SOKETI_DB_REDIS_PASSWORD" Target="SOKETI_DB_REDIS_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="SOKETI_DB_REDIS_DB" Target="SOKETI_DB_REDIS_DB" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="SOKETI_DB_REDIS_KEY_PREFIX" Target="SOKETI_DB_REDIS_KEY_PREFIX" Default="skt_" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="SOKETI_DB_POSTGRES_HOST" Target="SOKETI_DB_POSTGRES_HOST" Default="postgresql16" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="SOKETI_DB_POSTGRES_PORT" Target="3306" Default="3306" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
