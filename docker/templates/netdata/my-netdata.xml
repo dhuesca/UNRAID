@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>netdata</Name>
+  <Repository>netdata/netdata</Repository>
+  <Registry>https://hub.docker.com/r/netdata/netdata</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Project>https://learn.netdata.cloud/docs/</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:19999]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/netdata/netdata.png</Icon>
+  <ExtraParams>--pid=host --cap-add=SYS_PTRACE --cap-add=SYS_ADMIN --security-opt apparmor=unconfined --restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="DOCKER SOCK" Target="/var/run/docker.sock/" Default="/var/run/docker.sock/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DATA PATH" Target="/etc/netdata/" Default="/mnt/user/appdata/netdata/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="LIB PATH" Target="/var/lib/netdata/" Default="/mnt/user/appdata/netdata/lib/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CACHE PATH" Target="/var/cache/netdata/" Default="/mnt/user/appdata/netdata/cache/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PASSWD" Target="/host/etc/passwd/" Default="/etc/passwd/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="GROUP" Target="/host/etc/group/" Default="/etc/group/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="LOCALTIME" Target="/host/etc/localtime/" Default="/etc/localtime/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PROC" Target="/host/proc/" Default="/proc/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SYS" Target="/host/sys/" Default="/sys/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="OS-RELEASE" Target="/host/etc/os-release/" Default="/etc/os-release/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="LOG" Target="/host/var/log/" Default="/var/log/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+</Container>
