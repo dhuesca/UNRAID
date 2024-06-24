@@ -22,7 +22,7 @@
   <DonateLink/>
   <Requires/>
   <Config Name="WEB UI" Target="61208" Default="61208" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="DOCKER SOCK" Target="/var/run/docker.sock/" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DOCKER SOCKET" Target="/var/run/docker.sock/" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="GLANCES_OPT" Target="GLANCES_OPT" Default="-w" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="HOST ACCESS" Target="/rootfs" Default="/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="CONFIG. PATH" Target="/etc/glances/glances.conf/" Default="/mnt/user/appdata/glances/glances.conf/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>

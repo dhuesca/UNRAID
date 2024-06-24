@@ -9,7 +9,9 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://redis.com/redis-enterprise/redis-insight/</Project>
-  <Overview/>
+  <Overview>**INSTALLATION STEPS**&#xD;
+- Run command:&#xD;
+&amp;gt;install -d -p -o 1000 -g 1000 -m 755 /mnt/user/appdata/redis-insight/</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:5540]</WebUI>
   <TemplateURL/>

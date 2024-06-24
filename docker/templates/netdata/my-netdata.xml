@@ -21,7 +21,7 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="DOCKER SOCK" Target="/var/run/docker.sock/" Default="/var/run/docker.sock/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DOCKER SOCKET" Target="/var/run/docker.sock/" Default="/var/run/docker.sock/" Mode="ro" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="DATA PATH" Target="/etc/netdata/" Default="/mnt/user/appdata/netdata/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="LIB PATH" Target="/var/lib/netdata/" Default="/mnt/user/appdata/netdata/lib/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="CACHE PATH" Target="/var/cache/netdata/" Default="/mnt/user/appdata/netdata/cache/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>onedev</Name>
+  <Repository>1dev/server</Repository>
+  <Registry>https://hub.docker.com/r/1dev/server</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/theonedev/onedev</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:6610]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/onedev/onedev.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="6610" Default="6610" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DOCKER SOCKET" Target="/var/run/docker.sock/" Default="/var/run/docker.sock/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DATA PATH" Target="/opt/onedev/" Default="/mnt/user/appdata/onedev/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="hibernate_dialect" Target="hibernate_dialect" Default="io.onedev.server.persistence.PostgreSQLDialect" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="hibernate_connection_driver_class" Target="hibernate_connection_driver_class" Default="org.postgresql.Driver" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="hibernate_connection_url" Target="hibernate_connection_url" Default="jdbc:postgresql://[HOST]:[PORT]/[DATABASE]" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="hibernate_connection_username" Target="hibernate_connection_username" Default="onedev" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="hibernate_connection_password" Target="hibernate_connection_password" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+</Container>
