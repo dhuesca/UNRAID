@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>redis-insight</Name>
+  <Repository>oblakstudio/redisinsight:latest</Repository>
+  <Registry>https://hub.docker.com/r/oblakstudio/redisinsight</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://redis.com/redis-enterprise/redis-insight/</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5540]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/redis-insight/redis-insight.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="5540" Default="5540" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="debug|info" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="RI_APP_FOLDER_ABSOLUTE_PATH" Target="RI_APP_FOLDER_ABSOLUTE_PATH" Default="/redis-insight/data/" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DATA PATH" Target="/redis-insight/data/" Default="/mnt/user/appdata/redis-insight/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+</Container>
