@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>anythingllm</Name>
+  <Repository>ghcr.io/mintplex-labs/anything-llm:latest</Repository>
+  <Registry>https://github.com/Mintplex-Labs/anything-llm/pkgs/container/anything-llm</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://docs.anythingllm.com</Project>
+  <Overview>**INSTALLATION STEPS**&#xD;
+- Run commands:&#xD;
+&amp;gt;install -d -p -o 1000 -g 1000 -m 755 /mnt/user/appdata/anythingllm/storage&#xD;
+&amp;gt;install -o 1000 -g 1000 /dev/null /mnt/user/appdata/anythingllm/storage/anythingllm.db&#xD;
+- Copy .env file to /mnt/user/appdata/anythingllm/&#xD;
+- Run commands:&#xD;
+&amp;gt;chown 1000:1000 -R /mnt/user/appdata/anythingllm</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:12333]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/anythingllm/anythingllm.png</Icon>
+  <ExtraParams>--cap-add=SYS_ADMIN</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="3001" Default="12333" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">12333</Config>
+  <Config Name="CONFIG. PATH" Target="/app/server/.env" Default="/mnt/user/appdata/anythingllm/.env" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/anythingllm/.env</Config>
+  <Config Name="DATA PATH" Target="/app/server/storage" Default="/mnt/user/appdata/anythingllm/storage" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/anythingllm/storage</Config>
+  <Config Name="STORAGE_DIR" Target="STORAGE_DIR" Default="/app/server/storage" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">/app/server/storage</Config>
+</Container>
