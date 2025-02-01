@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>jellyfin</Name>
+  <Repository>lscr.io/linuxserver/jellyfin</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/jellyfin</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://jellyfin.org/docs</Support>
+  <Project>https://github.com/linuxserver/docker-jellyfin</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8096]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/jellyfin/jellyfin.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB UI" Target="8096" Default="8096" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8096</Config>
+  <Config Name="LOCAL DISCOVERY PORT" Target="7359" Default="7359" Mode="udp" Description="Allows clients to discover Jellyfin on the local network" Type="Port" Display="always" Required="true" Mask="false">7359</Config>
+  <Config Name="AUTODISCOVERY RESPONSE" Target="JELLYFIN_PublishedServerUrl" Default="http://10.10.20.100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://10.10.20.100</Config>
+  <Config Name="HOST HW ACCESS" Target="/dev/dri/" Default="" Mode="" Description="" Type="Device" Display="always" Required="true" Mask="false">/dev/dri/</Config>
+  <Config Name="CONFIG." Target="/config" Default="/mnt/user/appdata/jellyfin" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jellyfin</Config>
+  <Config Name="HOST ACCESS (TV)" Target="/media/tv" Default="/mnt/user/data/media/tv" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/data/media/tv/</Config>
+  <Config Name="HOST ACCESS (ANIME)" Target="/media/anime" Default="/mnt/user/data/media/anime" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/data/media/anime/</Config>
+  <Config Name="HOST ACCESS (MOVIES)" Target="/media/movies" Default="/mnt/user/data/media/movies" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/data/media/movies/</Config>
+  <Config Name="HOST ACCESS (TUTORIALS)" Target="/media/tutorials" Default="/mnt/user/data/media/tutorials" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/data/media/tutorials/</Config>
+  <Config Name="HOST ACCESS (PORN)" Target="/media/porn" Default="/mnt/user/data/media/porn" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/data/media/porn/</Config>
+  <Config Name="R-CLONE MOUNT" Target="/mnt/user/debrid/torrents/" Default="/mnt/user/debrid/torrents/" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/debrid/torrents/</Config>
+  <Config Name="TRANSCODE PATH" Target="/transcodes" Default="/dev/shm/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/dev/shm/</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">022</Config>
+  <TailscaleStateDir/>
+</Container>
