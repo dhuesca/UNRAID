@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>recyclarr</Name>
-  <Repository>ghcr.io/recyclarr/recyclarr:latest</Repository>
-  <Registry>https://github.com/recyclarr/recyclarr/pkgs/container/recyclarr</Registry>
+  <Repository>ghcr.io/recyclarr/recyclarr:edge</Repository>
+  <Registry>https://github.com/recyclarr/recyclarr</Registry>
   <Network>nasty</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project>https://github.com/recyclarr/recyclarr/wiki</Project>
+  <Project>https://recyclarr.dev</Project>
   <Overview/>
   <Category/>
   <WebUI/>
@@ -21,7 +21,5 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="CONFIG. PATH" Target="/config/" Default="/mnt/user/appdata/recyclarr/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="CRON_SCHEDULE" Target="CRON_SCHEDULE" Default="@daily" Mode="" Description="More info.: https://github.com/recyclarr/recyclarr/wiki/Docker#cron-mode" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="RECYCLARR_CREATE_CONFIG" Target="RECYCLARR_CREATE_CONFIG" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="APPDATA" Target="/config/" Default="/mnt/user/appdata/recyclarr/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
 </Container>
