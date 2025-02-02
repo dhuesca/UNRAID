@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>configarr</Name>
+  <Repository>ghcr.io/raydak-labs/configarr:latest</Repository>
+  <Registry>ghcr.io/raydak-labs/configarr:latest</Registry>
+  <Network>nasty</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://configarr.raydak.de/docs/category/configuration</Support>
+  <Project>https://configarr.raydak.de/</Project>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/nwithan8/unraid_templates/master/templates/configarr.xml</TemplateURL>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/configarr/configarr.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="APPDATA" Target="/app/config" Default="/mnt/user/appdata/configarr/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/configarr/</Config>
+  <TailscaleStateDir/>
+</Container>
