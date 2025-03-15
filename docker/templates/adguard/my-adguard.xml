@@ -3,24 +3,25 @@
   <Name>adguard</Name>
   <Repository>adguard/adguardhome</Repository>
   <Registry>https://registry.hub.docker.com/r/adguard/adguardhome</Registry>
-  <Network>br0</Network>
-  <MyIP/>
+  <Network>eth1</Network>
+  <MyIP>10.10.20.2</MyIP>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project/>
-  <Overview/>
+  <Project>https://adguard.com/kb/</Project>
+  <Overview>place 'AdGuardHome.yaml' in APPDATA</Overview>
   <Category/>
-  <WebUI>http://[IP]</WebUI>
+  <WebUI>http://[IP]:80</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/adguard/adguard.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled></DateInstalled>
+  <DateInstalled>1742047359</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="CONFIG. PATH" Target="/opt/adguardhome/conf/" Default="/mnt/user/appdata/adguard/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="WORKING DIR PATH" Target="/opt/adguardhome/work/" Default="/mnt/user/appdata/adguard/work/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="APPDATA" Target="/opt/adguardhome/conf" Default="/mnt/cache/appdata/adguard/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/adguard/</Config>
+  <Config Name="LOGS" Target="/opt/adguardhome/work" Default="/mnt/cache/appdata/adguard/logs/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/adguard/logs/</Config>
+  <TailscaleStateDir/>
 </Container>
