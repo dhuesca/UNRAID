@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>enclosed</Name>
+  <Repository>ghcr.io/corentinth/enclosed:latest</Repository>
+  <Registry>https://hub.docker.com/r/corentinth/enclosed</Registry>
+  <Network>eth1</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/CorentinTh/enclosed/issues</Support>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8787]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/enclosed/enclosed.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1742144648</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="APPDATA" Target="/app/.data" Default="/mnt/cache/appdata/enclosed/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/enclosed/</Config>
+  <TailscaleStateDir/>
+</Container>
