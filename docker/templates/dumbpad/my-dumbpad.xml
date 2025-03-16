@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dumbpad</Name>
+  <Repository>dumbwareio/dumbpad:latest</Repository>
+  <Registry>https://hub.docker.com/r/dumbwareio/dumbpad</Registry>
+  <Network>eth1</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/DumbWareio/DumbPad</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/dumbpad/dumbpad.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="APPDATA" Target="/app/data" Default="/mnt/cache/appdata/dumbpad/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/dumbpad/</Config>
+  <Config Name="PIN" Target="DUMBPAD_PIN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <TailscaleStateDir/>
+</Container>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dumbdo</Name>
+  <Repository>dumbwareio/dumbdo:latest</Repository>
+  <Registry>https://hub.docker.com/r/dumbwareio/dumbdo</Registry>
+  <Network>eth1</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/DumbWareio/DumbDo</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/dumbdo/dumbdo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="APPDATA" Target="/app/data" Default="/mnt/cache/appdata/dumbdo/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/dumbdo/</Config>
+  <Config Name="PIN" Target="DUMBDO_PIN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <TailscaleStateDir/>
+</Container>

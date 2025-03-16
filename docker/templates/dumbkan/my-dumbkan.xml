@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dumbkan</Name>
+  <Repository>dumbwareio/dumbkan:latest</Repository>
+  <Registry>https://hub.docker.com/r/dumbwareio/dumbkan</Registry>
+  <Network>eth1</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/DumbWareio/DumbKan</Project>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/dumbkan/dumbkan.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1742143340</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="APPDATA" Target="/app/data" Default="/mnt/cache/appdata/dumbkan/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/dumbkan/</Config>
+  <Config Name="PIN" Target="DUMBKAN_PIN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">60042165</Config>
+  <TailscaleStateDir/>
+</Container>
