@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>pocket-id</Name>
+  <Repository>ghcr.io/pocket-id/pocket-id</Repository>
+  <Registry/>
+  <Network>eth1</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/dhuesca/UNRAID/raw/main/docker/templates/pocket-id/pocket-id.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="APPDATA" Target="/app/backend/data" Default="/mnt/cache/appdata/pocket-id/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/pocket-id/</Config>
+  <Config Name="MAXMIND_LICENSE_KEY" Target="MAXMIND_LICENSE_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="PUBLIC_APP_URL" Target="PUBLIC_APP_URL" Default="https://pocket-id.dhuesca.com" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">https://pocket-id.dhuesca.com</Config>
+  <Config Name="TRUST_PROXY" Target="TRUST_PROXY" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
+  <Config Name="PUID " Target="PUID " Default="099" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">099</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
+  <TailscaleStateDir/>
+</Container>
